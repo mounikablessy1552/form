@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+
+}
+body{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+form{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+height: auto;
+width: auto;
+background-color: rgb(117, 180, 180);
+border-radius: 15px 40px ;
+box-shadow: 0 0 15px 4px rgba(0,0,0,0.5);
+padding: 30px 15px;
+
+}
+
+form h1{
+margin-bottom: 20px;
+color: aliceblue;
+
+}
+form label{
+margin: 14px 10px;
+color: aliceblue;
+font-size: 18px;
+}
+form label input{
+padding: 6px 10px;
+border-radius: 15px;
+outline: none;
+border: none;
+}
+form label input::placeholder{
+color: black;
+}
+form label input:focus{
+outline: 2px solid rgb(206, 108, 141);
+
+}
+
+form label input:hover{
+    box-shadow: 0 0 10px 2px rgba(0,0,0,0.5);
+    transition: all .7s ease;
+
+}
+ form div{
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+ }
+div a{
+margin-left: 40px;
+text-decoration: none;
+
+}
+div label{
+font-size: 15px;
+
+}
+ 
+button{
+width: 250px;
+height: 30PX;
+border-radius: 20px;
+border: none;
+font-size: 17px;
+font-weight: 600;
+cursor: pointer;
+background-color: rgb(235, 182, 224);
+}
+ 
+.label{
+font-size: 15px;
+
+}
+
+
+
+</style>
+</head>
+<body>
+    <form action="">
+<h1>login form</h1>
+<label for="name">username : <input type="text" placeholder="enter your email">
+</label>
+<label for="name">password : <input type="text" placeholder="enter your password">
+</label>
+
+<div>
+<label for="" ><input type="checkbox"> Remember Me</label>
+<a href="#">forgot password ?</a>
+</div>
+<button>login</button>
+
+<label class="label">don't have an account ? <a href="#">register</a></label>
+    </form>
+
+</body>
+</html>
